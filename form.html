@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <title>приложение-pink</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__logo">PINK</div>
+    <div class="page-header__toggle">
+      <nav class="main-menu">
+        <ul class="menu__list">
+          <a href="#">Главная</a>
+          <a href="#">Фотографии</a>
+          <a href="#">Конкурс</a>
+          <a href="#">HTML ACADEMY</a>
+        </ul>
+      </nav>
+    </div>
+    <p class="page-header__title">Конкурс на самое безбашенное путешествие вместе с ПИНК</p>
+  </header>
+  <main class="page-main">
+    <p class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+    <form class="form-iterm" action="https://echo.htmlacademy.ru" get="post">
+      <ul class="form-iterm__list">
+        <li class="form-iterm__user">
+          <label class="user-info" name="family-user" for id="family"><input type="text" id="family">
+          Укажите Фамилию</label>
+        </li>
+        <li class="form-iterm__list">
+          <label class="user-info" name="name-user" for id="name"><input type="text" id="name">
+          Введите ваше имя</label>
+        </li>
+        <li class="form-iterm__trip">
+          <label class="user-info" name="namesecond-user" for id="namesecond"><input type="text" id="namesecond">
+          Ну и очество тоже</label>
+        </li>
+      </ul>
+      <ul class="form-iterm__list"> 
+        <li class="form-iterm__trip">
+          <p class="form-iterm__trip trip-title">Ваши безбашенные приключения в путешествии</p>
+          <input class="form-iterm__trip checkbox-iterm" id="trip_1"><label class="trip-iterm" for id="trip_1">Сделал селфи с акулой</label><span class="checkbox-custom"></span>
+        </li>
+        <li class="form-iterm__trip">
+          <input class="form-iterm__trip checkbox-iterm" id="trip_2"><label class="trip-iterm" for id="trip_2">Обгорел на пляже</label><span class="checkbox-custom"></span>
+        </li>
+        <li class="form-iterm__trip">
+          <input class="form-iterm__trip checkbox-iterm" id="trip_3"><label class="trip-iterm" for id="trip_3">Видел Чака Норриса</label><span class="checkbox-custom"></span>
+        </li>
+        <li class="form-iterm__trip">
+          <input class="form-iterm__trip checkbox-iterm" id="trip_4"><label class="trip-iterm" for id="trip_4">Накупил сувениров</label><span class="checkbox-custom"></span>
+        </li>
+        <li class="form-iterm__trip">
+          <input class="form-iterm__trip checkbox-iterm" id="trip_5"><label class="trip-iterm" for id="trip_5">Удержал башню</label><span class="checkbox-custom"></span>
+        </li>
+        <li class="form-iterm__trip">
+          <input class="form-iterm__trip checkbox-iterm" id="trip_6"><label class="trip-iterm" for id="trip_6">Разгромил отель</label><span class="checkbox-custom"></span>
+        </li>
+      </ul>
+      <ul class="form-iterm__list">
+        <li class="form-iterm__contact">
+          <label class="contact-info" name="phone-user" for id="phone"><input type="text" id="phone" placeholder="Номер, пожалуйста">
+          Номер телефона</label>
+        </li>
+        <li class="form-iterm__contact">
+          <label class="contact-info" name="mail-user" for id="mail"><input type="text" id="mail" placeholder="Введите почту">
+          Адрес почты</label>
+        </li>
+      </ul>
+      <ul class="form-iterm__list">
+        <li class="app-list">
+          <p class="form-iterm__trip trip-title">С каким приложением путешествовали?</p>
+          <input class="form-iterm__trip radio-iterm" id="ios" type="radio"><label class="app-iterm" for id="ios">Pink для iOS</label><span class="radiobtn-custom"></span>
+        </li>
+        <li class="app-list">
+          <input class="form-iterm__trip radio-iterm" id="android" type="radio"><label class="app-iterm" for id="android">Pink для android</label><span class="radiobtn-custom"></span>
+        </li>
+        <li class="app-list">
+          <input class="form-iterm__trip radio-iterm" id="windows" type="radio"><label class="app-iterm" for id="windows">Pink для android</label><span class="radiobtn-custom"></span>
+        </li>
+      </ul>
+      <textarea placeholder="Можно прям в красках, не стесняясь эмоций"></textarea>
+      <button class="btn btn-form">Отправить форму</button>
+      <span class="form-iterm__span">Обязательные поля</span>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="page-header-logo">PINK</div>
+    <section class="social-block">
+      <ul class="social-block__list">
+        <li class="social-block__iterm">
+          <a href="">Твиттер</a>
+        </li>
+        <li class="social-block__iterm">
+          <a href="">Facebook</a>
+        </li>
+        <li class="social-block__iterm">
+          <a href="">Youtube</a>
+        </li>
+      </ul>
+    </section>
+    <p class="page-footer__creator">Разработано</p>
+  </footer>
+</body>
+</html>

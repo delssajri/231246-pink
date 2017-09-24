@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <title>приложение-pink</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header-logo">PINK</div>
+    <div class="page-header__toggle">
+      <nav class="main-menu">
+        <ul class="menu__list">
+          <li class="list__iterm">
+            <a href="#">Главная</a>
+          </li>
+          <li class="list__iterm">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="list__iterm">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="list__iterm">
+            <a href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <a class="btn btn--download" href="#">Скачать приложение</a>
+    <section class="blog-os">
+      <div class="blog-os__iterm i-os"></div>
+      <div class="blog-os__iterm android-os"></div>
+      <div class="blog-os__iterm windows-os"></div>
+      <p class="blog-os__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window 8</p>
+    </section>
+  </header>
+  <main class="page-main">
+    <b class="page-main__title">Устали от серости мегаполиса?</b>
+    <b class="page-main__title">Нам есть, что вам предложить!</b>
+    <section class="about">
+      <div class="about__iterm">
+        <p class="iterm__title">Поднимает настроение</p>
+        <p class="iterm__text">Приложение позволит вам победить осеннюю депрессию буквально в несколько кликов!</p>
+      </div>
+      <div class="about__iterm">
+        <p class="iterm__title">Меняет мир вокруг</p>
+        <p class="iterm__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+      </div>
+      <div class="about__iterm">
+        <p class="iterm__title">Заводит новых друзей</p>
+        <p class="iterm__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+      </div>
+    </section>
+    <img class="page-main__foto" src="http://placehold.it/150x100">
+    <section class="comments">
+      <div class="comments__iterm">
+        <b class="comments__iterm iterm__name">Николай Петров</b>
+        <p class="comments__iterm iterm__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментарии к выложенной фотографии!</p>
+      </div>
+      <div class="slider-btn">
+        <i class="slider-btn__iterm"></i>
+        <i class="slider-btn__iterm"></i>
+        <i class="slider-btn__iterm"></i>
+      </div>
+    </section>
+    <section class="tarif-price">
+      <div class="tarif-price__iterm standart-tarif">
+        <img class="iterm__foto standart-foto" src="http://placehold.it/150x100">
+        <table class="iterm__table standart-table">
+          <tr>
+            <td>Розовый фильтр</td>
+          </tr>
+          <tr>
+            <td>Смайлики</td>
+          </tr>
+          <tr>
+            <td>Комментарии</td>
+          </tr>
+        </table>
+      </div>
+      <div class="slider-btn">
+        <i class="slider-btn__iterm"></i>
+        <i class="slider-btn__iterm"></i>
+        <i class="slider-btn__iterm"></i>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <p class="page-footer__title">Остались вопросы?</p>
+    <p class="page-footer__title">Свяжитесь с нами!</p>
+    <section class="contact">
+      <div class="contact__iterm contact__phone">
+        <p class="contact__phone contact-title">Звоните:</p>
+        <p class="contact__phone contact-number">+7(812)555 - 66 - 66</p>
+      </div>
+      <div class="contact__iterm contact__mail">
+        <p class="contact__mail contact-title">Пишите:</p>
+        <p class="contact__mail contact-mail">mail@htmlacademy.ru</p>
+      </div>
+      <div class="contact__iterm contact__address">
+        <p class="contact__address contact-title">Приезжайте в гости:</p>
+        <p class="contact__address contact-address">ул. Большая Конюшенная, 19/8</p>
+      </div>
+    </section>
+    <div class="map"></div>
+  </footer>
+</body>
 </html>
