@@ -13,10 +13,18 @@
     <div class="page-header__toggle">
       <nav class="main-menu">
         <ul class="menu__list">
-          <a href="#">Главная</a>
-          <a href="#">Фотографии</a>
-          <a href="#">Конкурс</a>
-          <a href="#">HTML ACADEMY</a>
+          <li class="list__iterm">
+            <a href="#">Главная</a>
+          </li>
+          <li class="list__iterm">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="list__iterm">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="list__iterm">
+            <a href="#">HTML ACADEMY</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -24,62 +32,62 @@
   </header>
   <main class="page-main">
     <p class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-    <form class="form-iterm" action="https://echo.htmlacademy.ru" get="post">
+    <form class="form-iterm" action="https://echo.htmlacademy.ru" method="post">
       <ul class="form-iterm__list">
         <li class="form-iterm__user">
-          <label class="user-info" name="family-user" for id="family"><input type="text" id="family">
+          <label class="user-info" name="family-user" for="family-id"><input type="text" id="family-id">
           Укажите Фамилию</label>
         </li>
         <li class="form-iterm__list">
-          <label class="user-info" name="name-user" for id="name"><input type="text" id="name">
+          <label class="user-info" name="name-user" for="name-id"><input type="text" id="name-id">
           Введите ваше имя</label>
         </li>
         <li class="form-iterm__trip">
-          <label class="user-info" name="namesecond-user" for id="namesecond"><input type="text" id="namesecond">
+          <label class="user-info" name="namesecond-user" for="namesecond-id"><input type="text" id="namesecond-id">
           Ну и очество тоже</label>
         </li>
       </ul>
       <ul class="form-iterm__list"> 
         <li class="form-iterm__trip">
           <p class="form-iterm__trip trip-title">Ваши безбашенные приключения в путешествии</p>
-          <input class="form-iterm__trip checkbox-iterm" id="trip_1"><label class="trip-iterm" for id="trip_1">Сделал селфи с акулой</label><span class="checkbox-custom"></span>
+          <input class="form-iterm__trip checkbox-iterm" id="trip_1"><label class="trip-iterm" for="trip_1">Сделал селфи с акулой</label><span class="checkbox-custom"></span>
         </li>
         <li class="form-iterm__trip">
-          <input class="form-iterm__trip checkbox-iterm" id="trip_2"><label class="trip-iterm" for id="trip_2">Обгорел на пляже</label><span class="checkbox-custom"></span>
+          <input class="form-iterm__trip checkbox-iterm" id="trip_2"><label class="trip-iterm" for="trip_2">Обгорел на пляже</label><span class="checkbox-custom"></span>
         </li>
         <li class="form-iterm__trip">
-          <input class="form-iterm__trip checkbox-iterm" id="trip_3"><label class="trip-iterm" for id="trip_3">Видел Чака Норриса</label><span class="checkbox-custom"></span>
+          <input class="form-iterm__trip checkbox-iterm" id="trip_3"><label class="trip-iterm" for="trip_3">Видел Чака Норриса</label><span class="checkbox-custom"></span>
         </li>
         <li class="form-iterm__trip">
-          <input class="form-iterm__trip checkbox-iterm" id="trip_4"><label class="trip-iterm" for id="trip_4">Накупил сувениров</label><span class="checkbox-custom"></span>
+          <input class="form-iterm__trip checkbox-iterm" id="trip_4"><label class="trip-iterm" for="trip_4">Накупил сувениров</label><span class="checkbox-custom"></span>
         </li>
         <li class="form-iterm__trip">
-          <input class="form-iterm__trip checkbox-iterm" id="trip_5"><label class="trip-iterm" for id="trip_5">Удержал башню</label><span class="checkbox-custom"></span>
+          <input class="form-iterm__trip checkbox-iterm" id="trip_5"><label class="trip-iterm" for="trip_5">Удержал башню</label><span class="checkbox-custom"></span>
         </li>
         <li class="form-iterm__trip">
-          <input class="form-iterm__trip checkbox-iterm" id="trip_6"><label class="trip-iterm" for id="trip_6">Разгромил отель</label><span class="checkbox-custom"></span>
+          <input class="form-iterm__trip checkbox-iterm" id="trip_6"><label class="trip-iterm" for="trip_6">Разгромил отель</label><span class="checkbox-custom"></span>
         </li>
       </ul>
       <ul class="form-iterm__list">
         <li class="form-iterm__contact">
-          <label class="contact-info" name="phone-user" for id="phone"><input type="text" id="phone" placeholder="Номер, пожалуйста">
+          <label class="contact-info" name="phone-user" for="phone"><input type="text" id="phone" placeholder="Номер, пожалуйста">
           Номер телефона</label>
         </li>
         <li class="form-iterm__contact">
-          <label class="contact-info" name="mail-user" for id="mail"><input type="text" id="mail" placeholder="Введите почту">
+          <label class="contact-info" name="mail-user" for="mail"><input type="text" id="mail" placeholder="Введите почту">
           Адрес почты</label>
         </li>
       </ul>
       <ul class="form-iterm__list">
         <li class="app-list">
           <p class="form-iterm__trip trip-title">С каким приложением путешествовали?</p>
-          <input class="form-iterm__trip radio-iterm" id="ios" type="radio"><label class="app-iterm" for id="ios">Pink для iOS</label><span class="radiobtn-custom"></span>
+          <input class="form-iterm__trip radio-iterm" id="ios" type="radio"><label class="app-iterm" for="ios">Pink для iOS</label><span class="radiobtn-custom"></span>
         </li>
         <li class="app-list">
-          <input class="form-iterm__trip radio-iterm" id="android" type="radio"><label class="app-iterm" for id="android">Pink для android</label><span class="radiobtn-custom"></span>
+          <input class="form-iterm__trip radio-iterm" id="android" type="radio"><label class="app-iterm" for="android">Pink для android</label><span class="radiobtn-custom"></span>
         </li>
         <li class="app-list">
-          <input class="form-iterm__trip radio-iterm" id="windows" type="radio"><label class="app-iterm" for id="windows">Pink для android</label><span class="radiobtn-custom"></span>
+          <input class="form-iterm__trip radio-iterm" id="windows" type="radio"><label class="app-iterm" for="windows">Pink для android</label><span class="radiobtn-custom"></span>
         </li>
       </ul>
       <textarea placeholder="Можно прям в красках, не стесняясь эмоций"></textarea>
