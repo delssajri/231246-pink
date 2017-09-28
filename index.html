@@ -9,99 +9,100 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header-logo">PINK</div>
-    <div class="page-header__toggle">
-      <nav class="main-menu">
-        <ul class="menu__list">
-          <li class="list__iterm">
-            <a href="#">Главная</a>
+    <div class="logo">PINK</div>
+    <div class="page-header__nav">
+      <button type="button" class="page-header__nav-toggle">Меню</button>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-list__item">
+            <a href="#" class="header-nav-list__link">Главная</a>
           </li>
-          <li class="list__iterm">
-            <a href="#">Фотографии</a>
+          <li class="header-nav-list__item">
+            <a href="#" class="header-nav-list__link">Фотографии</a>
           </li>
-          <li class="list__iterm">
-            <a href="#">Конкурс</a>
+          <li class="header-nav-list__item">
+            <a href="#" class="header-nav-list__link">Конкурс</a>
           </li>
-          <li class="list__iterm">
-            <a href="#">HTML ACADEMY</a>
+          <li class="header-nav-list__item">
+            <a href="#" class="header-nav-list__link">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
     </div>
-    <a class="btn btn--download" href="#">Скачать приложение</a>
+    <a class="btn btn-download" href="#">Скачать приложение</a>
     <section class="blog-os">
-      <div class="blog-os__iterm i-os"></div>
-      <div class="blog-os__iterm android-os"></div>
-      <div class="blog-os__iterm windows-os"></div>
-      <p class="blog-os__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window 8</p>
+      <a class="blog-os__link i-os" href="#">IOS</a>
+      <a class="blog-os__link android-os" href="#">ANDROID</a>
+      <a class="blog-os__link windows-os" href="#">WINDOWS</a>
     </section>
+    <p class="blog-os__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window 8</p>
   </header>
   <main class="page-main">
-    <b class="page-main__title">Устали от серости мегаполиса?</b>
-    <b class="page-main__title">Нам есть, что вам предложить!</b>
+    <h2 class="page-main__title">Устали от серости мегаполиса?</h2>
+    <h2 class="page-main__title">Нам есть, что вам предложить!</h2>
     <section class="about">
-      <div class="about__iterm">
-        <p class="iterm__title">Поднимает настроение</p>
-        <p class="iterm__text">Приложение позволит вам победить осеннюю депрессию буквально в несколько кликов!</p>
+      <div class="about__item">
+        <h3 class="about__title">Поднимает настроение</h3>
+        <p class="about__text">Приложение позволит вам победить осеннюю депрессию буквально в несколько кликов!</p>
       </div>
-      <div class="about__iterm">
-        <p class="iterm__title">Меняет мир вокруг</p>
-        <p class="iterm__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+      <div class="about__item">
+        <h3 class="about__title">Меняет мир вокруг</h3>
+        <p class="about__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
       </div>
-      <div class="about__iterm">
-        <p class="iterm__title">Заводит новых друзей</p>
-        <p class="iterm__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+      <div class="about__item">
+        <h3 class="about__title">Заводит новых друзей</h3>
+        <p class="about__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
       </div>
     </section>
     <img class="page-main__foto" src="http://placehold.it/150x100" alt="ФОТО">
     <section class="comments">
-      <div class="comments__iterm">
-        <b class="comments__iterm iterm__name">Николай Петров</b>
-        <p class="comments__iterm iterm__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментарии к выложенной фотографии!</p>
+      <div class="comments__item">
+        <h4 class="comments__name">Николай Петров</h4>
+        <blockquote class="comments__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментарии к выложенной фотографии!</blockquote>
       </div>
-      <div class="slider-btn">
-        <i class="slider-btn__iterm"></i>
-        <i class="slider-btn__iterm"></i>
-        <i class="slider-btn__iterm"></i>
-      </div>
+      <p class="comments__toggles slider__toggles">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
     </section>
     <section class="tarif-price">
-      <div class="tarif-price__iterm standart-tarif">
-        <img class="iterm__foto standart-foto" src="http://placehold.it/150x100" alt="ФОТО">
-        <table class="iterm__table standart-table">
+      <div class="tarif-price__item standart-tarif">
+        <img class="tarif-price__foto standart-foto" src="http://placehold.it/150x100" alt="ФОТО">
+        <table class="tarif-price__table">
           <tr>
-            <td>Розовый фильтр</td>
+            <td class="tarif-price_option">Розовый фильтр</td>
           </tr>
           <tr>
-            <td>Смайлики</td>
+            <td class="tarif-price_option">Смайлики</td>
           </tr>
           <tr>
-            <td>Комментарии</td>
+            <td class="tarif-price_option">Комментарии</td>
           </tr>
         </table>
       </div>
-      <div class="slider-btn">
-        <i class="slider-btn__iterm"></i>
-        <i class="slider-btn__iterm"></i>
-        <i class="slider-btn__iterm"></i>
-      </div>
+      <p class="tarif-price slider__toggles">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
     </section>
   </main>
   <footer class="page-footer">
-    <p class="page-footer__title">Остались вопросы?</p>
-    <p class="page-footer__title">Свяжитесь с нами!</p>
+    <h2 class="page-footer__title">Остались вопросы?</p>
+    <h2 class="page-footer__title">Свяжитесь с нами!</p>
     <section class="contact">
-      <div class="contact__iterm contact__phone">
-        <p class="contact__phone contact-title">Звоните:</p>
-        <p class="contact__phone contact-number">+7(812)555 - 66 - 66</p>
+      <div class="contact__item">
+        <h5 class="contact__title">Звоните:</h5>
+        <p class="contact__text">+7(812)555 - 66 - 66</p>
       </div>
-      <div class="contact__iterm contact__mail">
-        <p class="contact__mail contact-title">Пишите:</p>
-        <p class="contact__mail contact-mail">mail@htmlacademy.ru</p>
+      <div class="contact__item">
+        <h5 class="contact__title">Пишите:</h5>
+        <p class="contact__text">mail@htmlacademy.ru</p>
       </div>
-      <div class="contact__iterm contact__address">
-        <p class="contact__address contact-title">Приезжайте в гости:</p>
-        <p class="contact__address contact-address">ул. Большая Конюшенная, 19/8</p>
+      <div class="contact__item">
+        <h5 class="contact__title">Приезжайте в гости:</h5>
+        <p class="contact__text">ул. Большая Конюшенная, 19/8</p>
       </div>
     </section>
     <div class="map"></div>

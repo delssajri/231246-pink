@@ -9,108 +9,116 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__logo">PINK</div>
-    <div class="page-header__toggle">
-      <nav class="main-menu">
-        <ul class="menu__list">
-          <li class="list__iterm">
-            <a href="#">Главная</a>
+    <div class="logo">PINK</div>
+    <div class="page-header__nav">
+      <button type="button" class="page-header__nav-toggle">Меню</button>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-list__item">
+            <a href="#" class="header-nav-list__link">Главная</a>
           </li>
-          <li class="list__iterm">
-            <a href="#">Фотографии</a>
+          <li class="header-nav-list__item">
+            <a href="#" class="header-nav-list__link">Фотографии</a>
           </li>
-          <li class="list__iterm">
-            <a href="#">Конкурс</a>
+          <li class="header-nav-list__item">
+            <a href="#" class="header-nav-list__link">Конкурс</a>
           </li>
-          <li class="list__iterm">
-            <a href="#">HTML ACADEMY</a>
+          <li class="header-nav-list__item">
+            <a href="#" class="header-nav-list__link">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
     </div>
-    <p class="page-header__title">Конкурс на самое безбашенное путешествие вместе с ПИНК</p>
+    <h1 class="page-header__title">Конкурс на самое безбашенное путешествие вместе с ПИНК</h1>
   </header>
   <main class="page-main">
-    <p class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-    <form class="form-iterm" action="https://echo.htmlacademy.ru" method="post">
-      <ul class="form-iterm__list">
-        <li class="form-iterm__user">
-          <label class="user-info" name="family-user" for="family-id"><input type="text" id="family-id">
-          Укажите Фамилию</label>
+    <h2 class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</h2>
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="form__fieldset">
+        <div class="form__group">
+          <label class="form__label" for="family-lastname">Фамилия:</label>
+          <input class="form__field" type="text" name="family-lastname" id="family-lastname" placeholder="Укажите фамилию*">
+        </div>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <div class="form__group">
+          <label class="form__label" for="family-name">Имя:</label>
+          <input class="form__field" type="text" name="family-name" id="family-name" placeholder="Введите ваше имя*">
+        </div>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <div class="form__group">
+          <label class="form__label" for="family-patronymic">Отчество:</label>
+          <input class="form__field" type="text" name="family-patronymic" id="family-patronymic" placeholder="Ну и отчество тоже:">
+        </div>
+      </fieldset>
+      <h3 class="form__title">Ваши безбашенные приключения в путешествии</h3>
+      <ul class="form-checkbox">
+        <li class="form-checkbox_item">
+          <input class="form-checkbox__field" type="checkbox" id="trip_1" name="trip_1"><label class="form-checkbox__label" for="trip_1">Сделал селфи с акулой</label>
         </li>
-        <li class="form-iterm__list">
-          <label class="user-info" name="name-user" for="name-id"><input type="text" id="name-id">
-          Введите ваше имя</label>
+        <li class="form-checkbox_item">
+          <input class="form-checkbox__field" type="checkbox" id="trip_2" name="trip_2"><label class="form-checkbox__label" for="trip_2">Обгорел на пляже</label>
         </li>
-        <li class="form-iterm__trip">
-          <label class="user-info" name="namesecond-user" for="namesecond-id"><input type="text" id="namesecond-id">
-          Ну и очество тоже</label>
+        <li class="form-checkbox_item">
+          <input class="form-checkbox__field" type="checkbox" id="trip_3" name="trip_3"><label class="form-checkbox__label" for="trip_3">Видел Чака Норриса</label>
         </li>
-      </ul>
-      <ul class="form-iterm__list">
-        <li class="form-iterm__trip">
-          <p class="form-iterm__trip trip-title">Ваши безбашенные приключения в путешествии</p>
-          <input class="form-iterm__trip checkbox-iterm" id="trip_1"><label class="trip-iterm" for="trip_1">Сделал селфи с акулой</label><span class="checkbox-custom"></span>
+        <li class="form-checkbox_item">
+          <input class="form-checkbox__field" type="checkbox" id="trip_4" name="trip_4"><label class="form-checkbox__label" for="trip_4">Накупил сувениров</label>
         </li>
-        <li class="form-iterm__trip">
-          <input class="form-iterm__trip checkbox-iterm" id="trip_2"><label class="trip-iterm" for="trip_2">Обгорел на пляже</label><span class="checkbox-custom"></span>
+        <li class="form-checkbox_item">
+          <input class="form-checkbox__field" type="checkbox" id="trip_5" name="trip_5"><label class="form-checkbox__label" for="trip_5">Удержал башню</label>
         </li>
-        <li class="form-iterm__trip">
-          <input class="form-iterm__trip checkbox-iterm" id="trip_3"><label class="trip-iterm" for="trip_3">Видел Чака Норриса</label><span class="checkbox-custom"></span>
-        </li>
-        <li class="form-iterm__trip">
-          <input class="form-iterm__trip checkbox-iterm" id="trip_4"><label class="trip-iterm" for="trip_4">Накупил сувениров</label><span class="checkbox-custom"></span>
-        </li>
-        <li class="form-iterm__trip">
-          <input class="form-iterm__trip checkbox-iterm" id="trip_5"><label class="trip-iterm" for="trip_5">Удержал башню</label><span class="checkbox-custom"></span>
-        </li>
-        <li class="form-iterm__trip">
-          <input class="form-iterm__trip checkbox-iterm" id="trip_6"><label class="trip-iterm" for="trip_6">Разгромил отель</label><span class="checkbox-custom"></span>
-        </li>
-      </ul>
-      <ul class="form-iterm__list">
-        <li class="form-iterm__contact">
-          <label class="contact-info" name="phone-user" for="phone"><input type="text" id="phone" placeholder="Номер, пожалуйста">
-          Номер телефона</label>
-        </li>
-        <li class="form-iterm__contact">
-          <label class="contact-info" name="mail-user" for="mail"><input type="text" id="mail" placeholder="Введите почту">
-          Адрес почты</label>
+        <li class="form-checkbox_item">
+          <input class="form-checkbox__field" type="checkbox" id="trip_6" name="trip_6"><label class="form-checkbox__label" for="trip_6">Разгромил отель</label>
         </li>
       </ul>
-      <ul class="form-iterm__list">
-        <li class="app-list">
-          <p class="form-iterm__trip trip-title">С каким приложением путешествовали?</p>
-          <input class="form-iterm__trip radio-iterm" id="ios" type="radio"><label class="app-iterm" for="ios">Pink для iOS</label><span class="radiobtn-custom"></span>
+      <fieldset class="form__fieldset">
+        <div class="form__group">
+          <label class="form__label" for="family-phone">Номер телефона</label>
+          <input class="form__field" type="tel" name="family-phone" id="family-phone" placeholder="Номер, пожалуйста">
+        </div>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <div class="form__group">
+          <label class="form__label" for="family-mail">Адрес почты</label>
+          <input class="form__field" type="email" name="family-mail" id="family-mail" placeholder="Введите почту*">
+        </div>
+      </fieldset>
+      <h3 class="form-title">С каким приложением путешествовали?</h3>
+      <ul class="form-radiobutton">
+        <li class="form-radiobutton_item">
+          <input class="form-radiobutton__field" type="radio" name="os" id="ios"><label class="form-radiobutton__label" for="ios">Pink для iOS</label>
         </li>
-        <li class="app-list">
-          <input class="form-iterm__trip radio-iterm" id="android" type="radio"><label class="app-iterm" for="android">Pink для android</label><span class="radiobtn-custom"></span>
+        <li class="form-radiobutton_item">
+          <input class="form-radiobutton__field" type="radio" name="os" id="android"><label class="form-radiobutton__label" for="android">Pink на android</label>
         </li>
-        <li class="app-list">
-          <input class="form-iterm__trip radio-iterm" id="windows" type="radio"><label class="app-iterm" for="windows">Pink для android</label><span class="radiobtn-custom"></span>
+        <li class="form-radiobutton_item">
+          <input class="form-radiobutton__field" type="radio" name="os" id="windows"><label class="form-radiobutton__label" for="windows">Windows phone</label>
         </li>
       </ul>
-      <textarea placeholder="Можно прям в красках, не стесняясь эмоций"></textarea>
+      <h3 class="form__title">Опишите свои эмоции</p>
+      <textarea class="form__field form-radiobutton_item" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       <button class="btn btn-form">Отправить форму</button>
-      <span class="form-iterm__span">Обязательные поля</span>
+      <span class="form__legend">Обязательные поля</span>
     </form>
   </main>
   <footer class="page-footer">
-    <div class="page-header-logo">PINK</div>
+    <div class="logo">PINK</div>
     <section class="social-block">
       <ul class="social-block__list">
-        <li class="social-block__iterm">
-          <a href="">Твиттер</a>
+        <li class="social-block__item">
+          <a class="social-block__link" href="#">Твиттер</a>
         </li>
-        <li class="social-block__iterm">
-          <a href="">Facebook</a>
+        <li class="social-block__item">
+          <a class="social-block__link" href="#">Facebook</a>
         </li>
-        <li class="social-block__iterm">
-          <a href="">Youtube</a>
+        <li class="social-block__item">
+          <a class="social-block__link" href="#">Youtube</a>
         </li>
       </ul>
     </section>
-    <p class="page-footer__creator">Разработано</p>
+    <a class="page-footer__link" href="https://htmlacademy.ru">Разработано</p>
   </footer>
 </body>
 </html>
