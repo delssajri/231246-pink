@@ -9,33 +9,38 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="logo">PINK</div>
-    <div class="page-header__nav">
-      <button type="button" class="page-header__nav-toggle">Меню</button>
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li class="header-nav-list__item">
-            <a href="#" class="header-nav-list__link">Главная</a>
-          </li>
-          <li class="header-nav-list__item">
-            <a href="#" class="header-nav-list__link">Фотографии</a>
-          </li>
-          <li class="header-nav-list__item">
-            <a href="#" class="header-nav-list__link">Конкурс</a>
-          </li>
-          <li class="header-nav-list__item">
-            <a href="#" class="header-nav-list__link">HTML ACADEMY</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="page-header__wrapper">
+      <div class="page-header__nav">
+        <div class="page-header__logo logo">PINK</div>
+        <button type="button" class="page-header__nav-toggle">Меню</button>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-list__item">
+              <a href="#" class="header-nav-list__link">Главная</a>
+            </li>
+            <li class="header-nav-list__item">
+              <a href="#" class="header-nav-list__link">Фотографии</a>
+            </li>
+            <li class="header-nav-list__item">
+              <a href="#" class="header-nav-list__link">Конкурс</a>
+            </li>
+            <li class="header-nav-list__item">
+              <a href="#" class="header-nav-list__link">HTML ACADEMY</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="app-container">
+        <h2 class="app-container__title">Взгляните на жизнь иначе!</h2>
+        <a class="btn btn-download" href="#">Скачать приложение</a>
+        <section class="blog-os">
+          <a class="blog-os__link i-os" href="#">IOS</a>
+          <a class="blog-os__link android-os" href="#">ANDROID</a>
+          <a class="blog-os__link windows-os" href="#">WINDOWS</a>
+        </section>
+        <p class="page-header__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window 8</p>
+      </div>
     </div>
-    <a class="btn btn-download" href="#">Скачать приложение</a>
-    <section class="blog-os">
-      <a class="blog-os__link i-os" href="#">IOS</a>
-      <a class="blog-os__link android-os" href="#">ANDROID</a>
-      <a class="blog-os__link windows-os" href="#">WINDOWS</a>
-    </section>
-    <p class="blog-os__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window 8</p>
   </header>
   <main class="page-main">
     <h2 class="page-main__title">Устали от серости мегаполиса?</h2>
@@ -55,6 +60,12 @@
       </div>
     </section>
     <!-- <img class="page-main__foto" src="http://placehold.it/150x100" alt="ФОТО"> -->
+    <div class="effect">
+      <div class="effect__item">
+        <h3 class="effect__title">Эффект на 24 часа!</h3>
+        <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+      </div>
+    </div>
     <section class="comments">
       <div class="comments__item">
         <h4 class="comments__name">Николай Петров</h4>
@@ -89,8 +100,9 @@
     </section>
   </main>
   <footer class="page-footer">
-    <h2 class="page-footer__title">Остались вопросы?</p>
-    <h2 class="page-footer__title">Свяжитесь с нами!</p>
+    <div class="page__wrapper">
+    <h2 class="page-footer__title">Остались вопросы?</h2>
+    <h2 class="page-footer__title">Свяжитесь с нами!</h2>
     <section class="contact">
       <div class="contact__item">
         <h5 class="contact__title">Звоните:</h5>
@@ -105,7 +117,25 @@
         <p class="contact__text">ул. Большая Конюшенная, 19/8</p>
       </div>
     </section>
+    </div>
     <div class="map"></div>
+    <div class="page__item">
+      <div class="page-footer__logo logo">PINK</div>
+    <section class="social-block">
+      <ul class="social-block__list">
+        <li class="social-block__item">
+          <a class="social-block__link" href="#">Твиттер</a>
+        </li>
+        <li class="social-block__item">
+          <a class="social-block__link" href="#">Facebook</a>
+        </li>
+        <li class="social-block__item">
+          <a class="social-block__link" href="#">Youtube</a>
+        </li>
+      </ul>
+    </section>
+    <a class="page-footer__link" href="https://htmlacademy.ru">Разработано</p>
+    </section>
   </footer>
 </body>
 </html>

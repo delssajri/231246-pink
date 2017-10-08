@@ -2,11 +2,34 @@
   background-color: #ffffff;
 }
 
+.comments__item {
+  display: flex;
+  flex-direction: column;
+}
+
 .comments__name {
   margin-bottom: 30px;
+
+  text-align: center;
 
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
   color: #000000;
+}
+
+@media (min-width: 320px) {
+  .comments__item {
+    width: 280px;
+  }
+}
+
+@media (min-width: 660px) {
+  .comments__name {
+    order: 2;
+  }
+
+  .comments__item {
+    width: 100%;
+  }
 }

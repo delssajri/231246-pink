@@ -7,6 +7,63 @@
 }
 
 .about__title {
+  font-size: 18px;
+  line-height: 24px;
   font-weight: bold;
   color: #000000;
+}
+
+.about__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+@media (min-width: 320px) {
+  .about {
+    width: 280px;
+    height: 760px;
+  }
+  .about__item {
+    /*width: 280px;*/
+  }
+  .about__title,
+  .about__text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 660px) {
+  .about {
+    width: 100%;
+
+    background: #d2d4d6 url("../img/iphone-screen-mobile@1x.png") no-repeat 0% 0%;
+    height: 100%;
+    /*margin-left: 300px;*/
+  }
+
+  .about__item {
+    width: 310px;
+    margin-left: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    width: 100%;
+    vertical-align: top;
+
+    background: none;
+
+  }
+  .about__item {
+    display: inline-block;
+    width: 240px;
+    margin-right: 85px;
+    margin-left: 0;
+  }
+
+  .about__item:last-child {
+    margin-right: 0;
+  }
 }
