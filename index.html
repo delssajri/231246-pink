@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
+    <div class="page__wrapper">
       <div class="page-header__nav">
         <div class="page-header__logo logo">PINK</div>
         <button type="button" class="page-header__nav-toggle">Меню</button>
@@ -38,11 +38,12 @@
           <a class="blog-os__link android-os" href="#">ANDROID</a>
           <a class="blog-os__link windows-os" href="#">WINDOWS</a>
         </section>
-        <p class="page-header__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window 8</p>
+        <p class="app-container__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window 8</p>
       </div>
     </div>
   </header>
   <main class="page-main">
+  <div class="page__wrapper">
     <h2 class="page-main__title">Устали от серости мегаполиса?</h2>
     <h2 class="page-main__title">Нам есть, что вам предложить!</h2>
     <section class="about">
@@ -64,11 +65,13 @@
       <div class="effect__item">
         <h3 class="effect__title">Эффект на 24 часа!</h3>
         <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a class="effect__link" href="#">Узнать больше об исследовании!</a>
       </div>
     </div>
     <section class="comments">
       <div class="comments__item">
         <h4 class="comments__name">Николай Петров</h4>
+        <h5 class="comments__about">25 лет, водитель трамвая</h5>
         <blockquote class="comments__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментарии к выложенной фотографии!</blockquote>
       </div>
       <p class="comments__toggles slider__toggles">
@@ -98,25 +101,26 @@
         <button class="slider__toggle" type="button">3</button>
       </p>
     </section>
+</div>
   </main>
   <footer class="page-footer">
     <div class="page__wrapper">
-    <h2 class="page-footer__title">Остались вопросы?</h2>
-    <h2 class="page-footer__title">Свяжитесь с нами!</h2>
-    <section class="contact">
-      <div class="contact__item">
-        <h5 class="contact__title">Звоните:</h5>
-        <p class="contact__text">+7(812)555 - 66 - 66</p>
-      </div>
-      <div class="contact__item">
-        <h5 class="contact__title">Пишите:</h5>
-        <p class="contact__text">mail@htmlacademy.ru</p>
-      </div>
-      <div class="contact__item">
-        <h5 class="contact__title">Приезжайте в гости:</h5>
-        <p class="contact__text">ул. Большая Конюшенная, 19/8</p>
-      </div>
-    </section>
+      <h2 class="page-footer__title">Остались вопросы?</h2>
+      <h2 class="page-footer__title">Свяжитесь с нами!</h2>
+      <section class="contact">
+        <div class="contact__item">
+          <h5 class="contact__title">Звоните:</h5>
+          <p class="contact__text">+7(812)555 - 66 - 66</p>
+        </div>
+        <div class="contact__item">
+          <h5 class="contact__title">Пишите:</h5>
+          <p class="contact__text">mail@htmlacademy.ru</p>
+        </div>
+        <div class="contact__item">
+          <h5 class="contact__title">Приезжайте в гости:</h5>
+          <p class="contact__text">ул. Большая Конюшенная, 19/8</p>
+        </div>
+      </section>
     </div>
     <div class="map"></div>
     <div class="page__item">
@@ -134,8 +138,8 @@
         </li>
       </ul>
     </section>
-    <a class="page-footer__link" href="https://htmlacademy.ru">Разработано</p>
-    </section>
+    <a class="page-footer__link" href="https://htmlacademy.ru">Разработано</a>
+    </div>
   </footer>
 </body>
 </html>

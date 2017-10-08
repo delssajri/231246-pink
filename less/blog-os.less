@@ -1,7 +1,4 @@
 .blog-os {
-  /*margin-top: 32px;*/
-  margin-bottom: 24px;
-
   vertical-align: top;
   text-align: center;
 
@@ -14,9 +11,42 @@
   height: 58px;
   margin-right: 36px;
 
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
 }
 
 .blog-os__link:last-child {
   margin-right: 0;
+}
+
+.i-os {
+  background: url("../img/logo-apple.svg") no-repeat 50% 50%;
+}
+
+.android-os {
+  background: url("../img/logo-android.svg") no-repeat 50% 50%;
+}
+
+.windows-os {
+  background: url("../img/logo-microsoft.svg") no-repeat 50% 50%;
+}
+
+@media (min-width: 320px) {
+  .blog-os {
+    margin-top: 32px;
+    margin-bottom: 26px;
+  }
+}
+
+@media (min-width: 660px) {
+  .blog-os {
+    margin-top: 45px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .blog-os {
+    margin-top: 66px;
+    margin-bottom: 57px;
+  }
 }

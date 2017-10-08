@@ -1,5 +1,7 @@
 .about {
-  background: #d2d4d6 url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 100%;
+  /*text-align: center;*/
+  /*margin: 0 auto;*/
+  /*background: #d2d4d6 url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 100%;*/
 }
 
 .about__item {
@@ -22,33 +24,24 @@
 @media (min-width: 320px) {
   .about {
     width: 280px;
-    height: 760px;
-  }
+    margin: 0 auto;
 
-  .about__title,
-  .about__text {
     text-align: center;
   }
 }
 
 @media (min-width: 660px) {
   .about {
-    width: 100%;
-
-    background: #d2d4d6 url("../img/iphone-screen-mobile@1x.png") no-repeat 0% 0%;
-    height: 100%;
-    /*margin-left: 300px;*/
-  }
-
-  .about__item {
     width: 310px;
     margin-left: 300px;
+    margin-right: 0;
+
+    text-align: left;
   }
 }
 
 @media (min-width: 1200px) {
   .about {
-    width: 100%;
     vertical-align: top;
 
     background: none;

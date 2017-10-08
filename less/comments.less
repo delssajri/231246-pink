@@ -22,11 +22,24 @@
   .comments__item {
     width: 280px;
   }
+  .comment__about {
+    display: none;
+  }
 }
 
 @media (min-width: 660px) {
   .comments__name {
+    order: 3;
+  }
+
+  .comment__about {
+    display: block;
     order: 2;
+  }
+
+  .comment__text {
+    display: block;
+    order: -1;
   }
 
   .comments__item {
