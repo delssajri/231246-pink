@@ -1,18 +1,18 @@
 .page-header {
-  /*height: 736px;*/
-
-  background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat 0% 50%;
+  background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0%;
+  background-size: contain;
 }
 
-.page__wrapper {
-  /*min-height: 736px;*/
+.container {
   padding: 0 20px;
   margin: 0 auto;
 }
 
 .page-header__logo {
-  width: 75px;
+  position: relative;
+  width: 150px;
 
+  font-size: 40px;
   color: #ffffff;
 }
 
@@ -20,14 +20,21 @@
   width: 50px;
 
   font-size: 0;
+
+  background: url("../img/icon-menu-burger.svg") no-repeat 50% 50%;
+  cursor: pointer;
 }
 
 .page-header__nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-content: center;
 
   padding: 20px 0;
+
+  /*background-color: #283645;*/
+
 }
 
 .page-header__title {
@@ -39,7 +46,7 @@
 }
 
 @media (min-width: 320px) {
-  .page__wrapper {
+  .container {
     width: 280px;
   }
 
@@ -47,36 +54,20 @@
     display: none;
   }
 
-  .app-container__title {
-    display: none;
+  .page-header__nav {
+    padding: 20px 0;
   }
 }
 
 @media (min-width: 660px) {
-  .page__wrapper {
+  .container {
     width: 620px;
-  }
-
-  .header-nav {
-    display: none;
-  }
-
-  .page-header__logo {
-    margin-left: 72px;
-  }
-
-  .app-container {
-    width: 300px;
-  }
-
-  .app-container__title {
-    display: block;
   }
 }
 
 @media (min-width: 1200px) {
-  .page__wrapper {
-    width: 950px;
+  .container {
+    width: 940px;
   }
 
   .page-header__nav-toggle {

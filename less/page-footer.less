@@ -1,15 +1,17 @@
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .page-footer__title {
   margin-bottom: 10px;
 
   font-size: 40px;
   font-weight: lighter;
   line-height: auto;
-}
-
-.page__wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .page-footer__link {
@@ -39,6 +41,10 @@
 }
 
 @media (min-width: 320px) {
+  .page-footer__wrapper {
+    width: 280px;
+  }
+
   .page-footer__title {
     width: 280px;
   }
@@ -57,6 +63,10 @@
 }
 
 @media (min-width: 660px) {
+  .page-main__wrapper {
+    width: 620px;
+  }
+
   .page__item {
     display: flex;
   }
@@ -73,5 +83,11 @@
   .contact__item:last-child {
     width: 370px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-main__wrapper {
+    width: 950px;
   }
 }
