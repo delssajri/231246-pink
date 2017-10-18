@@ -1,21 +1,55 @@
 .effect {
   display: flex;
   flex-direction: row;
+  /*justify-content: space-between;*/
+
+  margin-bottom: 60px;
+}
+
+.effect__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.effect__link {
+  color: #d22856;
 }
 
 .effect__item {
   width: 310px;
-  margin-left: auto;
+  /*margin-left: auto;*/
+}
+
+.effect__foto-item {
+  display: block;
+  width: 240px;
+  height: 275px;
+  margin-right: 73px;
+
+  background: url("../img/hours24.png") no-repeat 50% 50%;
+
 }
 
 @media (min-width: 320px) {
   .effect {
     display: none;
   }
+
 }
 
 @media (min-width: 660px) {
   .effect {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .effect__foto-item {
     display: block;
+  }
+
+  .effect__item {
+    width: 530px;
   }
 }

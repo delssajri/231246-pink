@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <title>приложение-pink</title>
 </head>
 <body>
@@ -24,7 +23,7 @@
               <a href="#" class="header-nav-list__link">Конкурс</a>
             </li>
             <li class="header-nav-list__item">
-              <a href="#" class="header-nav-list__link">HTML ACADEMY</a>
+              <a href="#" class="header-nav-list__link">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -42,25 +41,34 @@
     </div>
   </header>
   <main class="page-main">
-  <div class="page-main__wrapper">
-    <h2 class="page-main__title">Устали от серости мегаполиса?</h2>
-    <h2 class="page-main__title">Нам есть, что вам предложить!</h2>
-    <section class="about">
-      <div class="about__item">
-        <h3 class="about__title">Поднимает настроение</h3>
-        <p class="about__text">Приложение позволит вам победить осеннюю депрессию буквально в несколько кликов!</p>
-      </div>
-      <div class="about__item">
-        <h3 class="about__title">Меняет мир вокруг</h3>
-        <p class="about__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      </div>
-      <div class="about__item">
-        <h3 class="about__title">Заводит новых друзей</h3>
-        <p class="about__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-      </div>
-    </section>
+  <div class="container">
+    <div class="page-main__wrapper-title">
+      <h2 class="page-main__title">Устали от серости мегаполиса?</h2>
+      <h2 class="page-main__title">Нам есть, что вам предложить!</h2>
+    </div>
+    <div class="about__wrapper">
+      <section class="about">
+        <div class="about__item">
+          <div class="about__foto-item about--nocolor"></div>
+          <h3 class="about__title">Поднимает настроение</h3>
+          <p class="about__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="about__item">
+          <div class="about__foto-item about--color"></div>
+          <h3 class="about__title">Меняет мир вокруг</h3>
+          <p class="about__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="about__item">
+          <div class="about__foto-item about--smile"></div>
+          <h3 class="about__title">Заводит новых друзей</h3>
+          <p class="about__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </section>
+      <div class="about__foto"></div>
+    </div>
     <!-- <img class="page-main__foto" src="http://placehold.it/150x100" alt="ФОТО"> -->
     <div class="effect">
+      <div class="effect__foto-item"></div>
       <div class="effect__item">
         <h3 class="effect__title">Эффект на 24 часа!</h3>
         <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
@@ -73,71 +81,90 @@
         <h5 class="comments__about">25 лет, водитель трамвая</h5>
         <blockquote class="comments__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментарии к выложенной фотографии!</blockquote>
       </div>
-      <p class="comments__toggles slider__toggles">
+      <!-- <p class="comments__toggles slider__toggles">
         <button class="slider__toggle" type="button">1</button>
         <button class="slider__toggle" type="button">2</button>
         <button class="slider__toggle" type="button">3</button>
-      </p>
+      </p> -->
     </section>
     <section class="tarif-price">
-      <div class="tarif-price__item standart-tarif">
-        <img class="tarif-price__foto standart-foto" src="http://placehold.it/150x100" alt="ФОТО">
+      <div class="tarif-price__wrapper">
+        <!-- <img class="tarif-price__foto standart-foto" src="http://placehold.it/150x100" alt="ФОТО"> -->
         <table class="tarif-price__table">
           <tr>
+            <th class="tarif-price__header tarif-price--noview"></th>
+            <th class="tarif-price__header tarif-price--base">База</th>
+            <th class="tarif-price__header tarif-price--standart">Стандарт</th>
+            <th class="tarif-price__header tarif-price--unlim">Анлим</th>
+          </tr>
+          <tr>
             <td class="tarif-price__option">Розовый фильтр</td>
+            <td class="tarif-price__option tarif-price__option--yes"></td>
+            <td class="tarif-price__option tarif-price__option--yes"></td>
+            <td class="tarif-price__option tarif-price__option--yes"></td>
           </tr>
           <tr>
             <td class="tarif-price__option">Смайлики</td>
+            <td class="tarif-price__option tarif-price__option--no"></td>
+            <td class="tarif-price__option tarif-price__option--yes"></td>
+            <td class="tarif-price__option tarif-price__option--yes"></td>
           </tr>
           <tr>
             <td class="tarif-price__option">Комментарии</td>
+            <td class="tarif-price__option tarif-price__option--no">1</td>
+            <td class="tarif-price__option tarif-price__option--no">1</td>
+            <td class="tarif-price__option tarif-price__option--yes">1</td>
           </tr>
         </table>
       </div>
-      <p class="tarif-price slider__toggles">
+      <!-- <p class="tarif-price slider__toggles">
         <button class="slider__toggle" type="button">1</button>
         <button class="slider__toggle" type="button">2</button>
         <button class="slider__toggle" type="button">3</button>
-      </p>
+      </p> -->
     </section>
 </div>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="container">
       <h2 class="page-footer__title">Остались вопросы?</h2>
       <h2 class="page-footer__title">Свяжитесь с нами!</h2>
       <section class="contact">
-        <div class="contact__item">
+        <div class="contact__item contact--call">
           <h5 class="contact__title">Звоните:</h5>
           <p class="contact__text">+7(812)555 - 66 - 66</p>
         </div>
-        <div class="contact__item">
+        <div class="contact__item contact--write">
           <h5 class="contact__title">Пишите:</h5>
           <p class="contact__text">mail@htmlacademy.ru</p>
         </div>
-        <div class="contact__item">
+        <div class="contact__item contact--go">
           <h5 class="contact__title">Приезжайте в гости:</h5>
           <p class="contact__text">ул. Большая Конюшенная, 19/8</p>
         </div>
       </section>
     </div>
-    <div class="map"></div>
-    <div class="page__item">
-      <div class="page-footer__logo logo">PINK</div>
-    <section class="social-block">
-      <ul class="social-block__list">
-        <li class="social-block__item">
-          <a class="social-block__link" href="#">Твиттер</a>
-        </li>
-        <li class="social-block__item">
-          <a class="social-block__link" href="#">Facebook</a>
-        </li>
-        <li class="social-block__item">
-          <a class="social-block__link" href="#">Youtube</a>
-        </li>
-      </ul>
-    </section>
-    <a class="page-footer__link" href="https://htmlacademy.ru">Разработано</a>
+    <div class="map">
+      <img class="map__photo" src="img/map.jpg" width=100%>
+    </div>
+    <div class="container">
+      <div class="page__wrapper">
+        <div class="page-footer__logo logo">PINK</div>
+        <section class="social-block">
+          <ul class="social-block__list">
+            <li class="social-block__item">
+              <a class="social-block__link social-block__link--tv" href="#">Твиттер</a>
+            </li>
+            <li class="social-block__item">
+              <a class="social-block__link social-block__link--fb" href="#">Facebook</a>
+            </li>
+            <li class="social-block__item">
+              <a class="social-block__link social-block__link--yt" href="#">Youtube</a>
+            </li>
+          </ul>
+        </section>
+        <a class="page-footer__link" href="https://htmlacademy.ru">Разработано</a>
+      </div>
     </div>
   </footer>
 </body>
