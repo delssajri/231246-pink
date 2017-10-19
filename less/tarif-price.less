@@ -5,7 +5,9 @@
 }
 
 .tarif-price__wrapper {
-  overflow: scroll;
+  width: 640px;
+  height: 220px;
+  overflow-x: auto;
 }
 
 .tarif-price__table {
@@ -37,7 +39,21 @@
   border: 1px solid #d2d4d6;
 }
 
+.tarif-price__price {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
 .tarif-price--noview {
   background-color: #ffffff;
   border: none;
+}
+
+.tarif-price__option--no {
+  background: url("../img/no.jpg") no-repeat 50% 50%;
+}
+
+.tarif-price__option--yes {
+  background: url("../img/yes.jpg") no-repeat 50% 50%;
 }
